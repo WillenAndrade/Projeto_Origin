@@ -9,7 +9,6 @@ html, body {
   background: white;
   font-family: 'PT serif', verdana, cursive;
   line-height: 1.8em;
-
 }
 
 header {
@@ -25,6 +24,7 @@ header {
   align-items: center;
   padding: 10px 50px;
 }
+
 header ul {
   display: flex;
   list-style-type: none;
@@ -36,6 +36,7 @@ header ul li a {
   text-decoration: none;
   margin-left: 20px;
 }
+
 header ul li:hover {
   color: yellow;
 }
@@ -52,6 +53,7 @@ main {
 main h1 {
   text-align: center;
 }
+
 main h2 {
   padding-left: 30px;
 }
@@ -85,6 +87,7 @@ nav {
   background: url('imagens/Desert.jpg');
   background-size: cover;
 }
+
 section {
   width: 100%;
   height: 100%;
@@ -119,6 +122,7 @@ section {
 .texto2 h1 {
   padding: 50px 0;
 }
+
 .img1 {
   display: flex;
   width: 100%;
@@ -128,9 +132,7 @@ section {
   flex: 1 1 400px;
 }
 
-
-/*
-CSS GRID*/
+ /*CSS GRID*/
 
 .container {
   height: 100vh;
@@ -139,11 +141,14 @@ CSS GRID*/
   grid-template-rows: 13vh 35vh 35vh 10vh;
 }
 
+/*Media Queries*/
+
 @media (max-width: 700px) {
   header {
     overflow: hidden;
     padding: 0;
   }
+
   header ul {
     overflow: hidden;
     padding-right: 30px;
@@ -152,42 +157,46 @@ CSS GRID*/
   nav {
     display: none;
   }
+
   main{
     width: 390px;
     height: 600px;
     overflow: scroll;
-
   }
+
   .texto2 {
     width: 390px;
     height: 100vh;
     margin: auto;
     text-align: center;
-
     overflow: scroll;
   }
+
   .texto2 p {
    margin: 0px;
    padding-bottom: 40px;
   }
+
   footer {
-    background: gray;
+    background: black;
     width: 100%;
     height: 70px;
   }
+
   aside {
     display: none;
   }
+
   .parallax {
     width: 98%;
     height: 200px;
     margin: auto;
   }
+
   header ul li a {
     text-decoration: none;
     margin-left: 15px;
   }
-
 
   .img2 {
     max-width: 80%;
@@ -195,17 +204,14 @@ CSS GRID*/
 }
 
 @media (min-width: 701px) and (max-width: 900px) {
-  .container{
 
-  }
-  nav {
-  }
   main{
     width: 600px;
     height: 600px;
     overflow: scroll;
     padding: 0 30px;
   }
+
   .texto2 {
     width: 600px;
     height: 100vh;
@@ -214,31 +220,36 @@ CSS GRID*/
     padding: 0px 40px;
     overflow: scroll;
   }
+
   .texto2 p {
    margin: 0px;
    padding-bottom: 40px;
   }
+
   footer {
     background: black;
     width: 99%;
     height: 70px;
   }
+
   aside {
     background-position: center center;
   }
+
   .boxparallax {
     display: flex;
     width: 100%;
     height: 60vh;
-
     align-items: center;
   }
+
   .parallax {
     width: 100%;
     height: 300px;
     margin: auto;
     margin-bottom: 50px;
   }
+
   header ul li a {
     text-decoration: none;
     margin-left: 15px;
@@ -249,16 +260,13 @@ CSS GRID*/
 
 
 @media (min-width: 901px) {
-  .container{
 
-  }
-  nav {
-  }
   main{
     width: 650px;
     height: 600px;
     padding: 0 30px;
   }
+
   .texto2 {
     width: 650px;
     height: 100vh;
@@ -266,15 +274,18 @@ CSS GRID*/
     text-align: center;
     padding: 0px 40px;
   }
+
   .texto2 p {
    margin: 0px;
    padding-bottom: 40px;
   }
+
   footer {
     background: black;
     width: 99%;
     height: 70px;
   }
+
   aside {
     background-position: center center;
   }
@@ -284,11 +295,13 @@ CSS GRID*/
     width: 100%;
     height: 100vh;
   }
+
   .parallax {
     width: 100%;
     height: 300px;
     margin: auto;
   }
+
   header ul li a {
     text-decoration: none;
     margin-left: 15px;
@@ -299,16 +312,12 @@ CSS GRID*/
 
 @media (min-width: 1001px) {
 
-  .container{
-  }
-
-  nav {
-  }
   main{
     width: 800px;
     height: 600px;
     padding: 0 30px;
   }
+
   .texto2 {
     width: 800px;
     height: 100vh;
@@ -316,23 +325,28 @@ CSS GRID*/
     text-align: center;
     padding: 0px 40px;
   }
+
   .texto2 p {
    margin: 0px;
    padding-bottom: 40px;
   }
+
   footer {
     background: black;
     width: 99%;
     height: 70px;
   }
+
   aside {
     background-position: center center;
   }
+
   .parallax {
     width: 100%;
     height: 300px;
     margin: auto;
   }
+
   header ul li a {
     text-decoration: none;
     margin-left: 15px;
