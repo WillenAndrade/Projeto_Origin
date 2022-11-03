@@ -1,0 +1,339 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: white;
+  font-family: 'PT serif', verdana, cursive;
+  line-height: 1.8em;
+
+}
+
+header {
+  height: 60px;
+  background: #020133;
+  display: flex;
+  background-position: center center;
+  background-size: cover;
+  grid-column: 1 / 5;
+  grid-row: 1;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  padding: 10px 50px;
+}
+header ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+header ul li a {
+  text-decoration: none;
+  margin-left: 20px;
+}
+header ul li:hover {
+  color: yellow;
+}
+
+main {
+  background: white;
+  height: 800px;
+  grid-column: 2/4;
+  grid-row: 2/4;
+  padding: 0 30px;
+  margin-top: 20px;
+}
+
+main h1 {
+  text-align: center;
+}
+main h2 {
+  padding-left: 30px;
+}
+
+aside {
+  background: green;
+  grid-column: 1/2;
+  grid-row: 2/4;
+  background: url('imagens/Penguins.jpg');
+}
+
+article {
+  background: red;
+  grid-column: 4/5;
+  grid-row: 3/4;
+
+}
+
+footer {
+  background: black;
+  width: 100%;
+  height: 80px;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+  background: tomato;
+  grid-column: 4/5;
+  grid-row: 3/4;
+  background: url('imagens/Desert.jpg');
+  background-size: cover;
+}
+section {
+  width: 100%;
+  height: 100%;
+  background: white;
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+.parallax {
+  width: 100%;
+  margin-top: 200px;
+  height: 60vh;
+  background-image: url('imagens/Jellyfish.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.texto2 {
+  width: 770px;
+  height: 100vh;
+  margin: auto;
+  text-align: center;
+  padding: 0 30px;
+
+}
+
+.texto2 p {
+ margin: 0 10px;
+}
+
+.texto2 h1 {
+  padding: 50px 0;
+}
+.img1 {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 400px;
+}
+
+
+/*
+CSS GRID*/
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 13vh 35vh 35vh 10vh;
+}
+
+@media (max-width: 700px) {
+  header {
+    overflow: hidden;
+    padding: 0;
+  }
+  header ul {
+    overflow: hidden;
+    padding-right: 30px;
+  }
+
+  nav {
+    display: none;
+  }
+  main{
+    width: 390px;
+    height: 600px;
+    overflow: scroll;
+
+  }
+  .texto2 {
+    width: 390px;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+
+    overflow: scroll;
+  }
+  .texto2 p {
+   margin: 0px;
+   padding-bottom: 40px;
+  }
+  footer {
+    background: gray;
+    width: 100%;
+    height: 70px;
+  }
+  aside {
+    display: none;
+  }
+  .parallax {
+    width: 98%;
+    height: 200px;
+    margin: auto;
+  }
+  header ul li a {
+    text-decoration: none;
+    margin-left: 15px;
+  }
+
+
+  .img2 {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+  .container{
+
+  }
+  nav {
+  }
+  main{
+    width: 600px;
+    height: 600px;
+    overflow: scroll;
+    padding: 0 30px;
+  }
+  .texto2 {
+    width: 600px;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+    overflow: scroll;
+  }
+  .texto2 p {
+   margin: 0px;
+   padding-bottom: 40px;
+  }
+  footer {
+    background: black;
+    width: 99%;
+    height: 70px;
+  }
+  aside {
+    background-position: center center;
+  }
+  .boxparallax {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+
+    align-items: center;
+  }
+  .parallax {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  header ul li a {
+    text-decoration: none;
+    margin-left: 15px;
+  }
+
+}
+
+
+
+@media (min-width: 901px) {
+  .container{
+
+  }
+  nav {
+  }
+  main{
+    width: 650px;
+    height: 600px;
+    padding: 0 30px;
+  }
+  .texto2 {
+    width: 650px;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+  }
+  .texto2 p {
+   margin: 0px;
+   padding-bottom: 40px;
+  }
+  footer {
+    background: black;
+    width: 99%;
+    height: 70px;
+  }
+  aside {
+    background-position: center center;
+  }
+
+  .boxparallax {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+  }
+  .parallax {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+  }
+  header ul li a {
+    text-decoration: none;
+    margin-left: 15px;
+  }
+
+}
+
+
+@media (min-width: 1001px) {
+
+  .container{
+  }
+
+  nav {
+  }
+  main{
+    width: 800px;
+    height: 600px;
+    padding: 0 30px;
+  }
+  .texto2 {
+    width: 800px;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+  }
+  .texto2 p {
+   margin: 0px;
+   padding-bottom: 40px;
+  }
+  footer {
+    background: black;
+    width: 99%;
+    height: 70px;
+  }
+  aside {
+    background-position: center center;
+  }
+  .parallax {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+  }
+  header ul li a {
+    text-decoration: none;
+    margin-left: 15px;
+  }
